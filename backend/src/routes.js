@@ -9,6 +9,7 @@ const BoxController = require("./controllers/BoxController");
 const FileController = require("./controllers/FileController");
 
 routes.get("/boxes/:id", BoxController.show);
+routes.get("/boxes", BoxController.index);
 routes.post("/boxes", BoxController.store);
 
 routes.post(
